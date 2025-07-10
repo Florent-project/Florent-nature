@@ -5,69 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Florent - 자연쉴드</title>
   <style>
-    body {
+    * {
       margin: 0;
-      background-image: url('main-background.jpg');
-      background-size: cover;
-      background-position: center;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      background-image: url('main-background.jpg'); /* 너가 보낸 식물배경 이미지 */
+      background-size: contain; /* 잘리지 않고 전체 보이도록 */
+      background-position: top center;
       background-repeat: no-repeat;
       font-family: 'Noto Sans KR', sans-serif;
     }
-
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      background-color: rgba(255, 255, 255, 0.6);
+      background-color: rgba(255, 255, 255, 0.8);
     }
-
     .logo {
       display: flex;
       align-items: center;
       font-size: 24px;
       font-weight: bold;
-      color: #1b3a1b;
     }
-
     .logo img {
       height: 40px;
       margin-right: 10px;
     }
-
     nav a {
-      margin-left: 30px;
+      margin-left: 20px;
       text-decoration: none;
-      color: #1b3a1b;
-      font-weight: 600;
+      color: #333;
+      font-weight: 500;
     }
-
-    main {
+    .main-content {
       text-align: center;
-      margin-top: 200px;
-      color: #1b3a1b;
-      background-color: rgba(255, 255, 255, 0.4);
-      padding: 30px;
-      border-radius: 20px;
-      width: fit-content;
-      margin-left: auto;
-      margin-right: auto;
+      margin-top: 100px;
+      padding: 20px;
+      color: #104010;
     }
-
-    h1 {
-      font-size: 48px;
+    .main-content h1 {
+      font-size: 60px;
       margin-bottom: 20px;
     }
-
-    p {
-      font-size: 20px;
+    .main-content p {
+      font-size: 24px;
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <img src="logo.png" alt="Florent 로고" />
+      <img src="florent-logo.png" alt="Florent 로고" />
       FLORENT
     </div>
     <nav>
@@ -77,10 +70,9 @@
       <a href="#">문의하기</a>
     </nav>
   </header>
-
-  <main>
+  <div class="main-content">
     <h1>당신의 일상에 자연을 입히다</h1>
     <p>자연친화적 · 환경보호 · 식물 유래 방충성분</p>
-  </main>
+  </div>
 </body>
 </html>
